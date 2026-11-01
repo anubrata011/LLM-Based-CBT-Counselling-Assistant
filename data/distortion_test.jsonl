@@ -1,0 +1,480 @@
+{"text": "I think I'm to blame for how my college turned out.", "label": "personalization", "topic": "my college"}
+{"text": "Honestly, It feels hopeless, so my project must be hopeless. It's been on my mind all day.", "label": "emotional_reasoning", "topic": "my project"}
+{"text": "I keep feeling that Other people shouldn't ever see me struggle with my lab viva. I can't stop thinking about it.", "label": "should_statements", "topic": "my lab viva"}
+{"text": "I messed up my placement once and now I'm sure I'll never succeed at anything. It's been on my mind all day.", "label": "overgeneralization", "topic": "my placement"}
+{"text": "I'll be humiliated forever if my presentation goes badly.", "label": "catastrophizing", "topic": "my presentation"}
+{"text": "Ugh, I'd like some help thinking about my college. I can't stop thinking about it.", "label": "none", "topic": "my college"}
+{"text": "I think I'd like some help thinking about my college.", "label": "none", "topic": "my college"}
+{"text": "I think I'm sure my friends are laughing at me about my results.", "label": "mind_reading", "topic": "my results"}
+{"text": "There is no middle ground, my relationship is a total disaster or a perfect success.", "label": "all_or_nothing", "topic": "my relationship"}
+{"text": "Lately my college was tiring, so I'm taking a short break. It's been on my mind all day.", "label": "none", "topic": "my college"}
+{"text": "I shouldn't feel nervous about my project, there's something wrong with me. I can't stop thinking about it.", "label": "should_statements", "topic": "my project"}
+{"text": "I think If my assignment isn't flawless, there's no point in even trying.", "label": "all_or_nothing", "topic": "my assignment"}
+{"text": "Ugh, This always happens to me, every single time with my family. I don't know what to do.", "label": "overgeneralization", "topic": "my family"}
+{"text": "I feel like nobody cares, so it must be true after my friend. I can't stop thinking about it.", "label": "emotional_reasoning", "topic": "my friend"}
+{"text": "Honestly, They are in a bad mood and it must be because of me and my job interview. I don't know what to do.", "label": "personalization", "topic": "my job interview"}
+{"text": "It doesn't matter that my project went well, it wasn't a real achievement.", "label": "disqualifying_positive", "topic": "my project"}
+{"text": "I think I'll be humiliated forever if my college goes badly.", "label": "catastrophizing", "topic": "my college"}
+{"text": "Ugh, I'd like some help thinking about my relationship. I can't stop thinking about it.", "label": "none", "topic": "my relationship"}
+{"text": "Honestly, I shouldn't feel nervous about my placement, there's something wrong with me. I don't know what to do.", "label": "should_statements", "topic": "my placement"}
+{"text": "Lately I'll be humiliated forever if my assignment goes badly.", "label": "catastrophizing", "topic": "my assignment"}
+{"text": "I think They are in a bad mood and it must be because of me and my exam.", "label": "personalization", "topic": "my exam"}
+{"text": "I keep feeling that I can already tell my lab viva won't work out and I'll end up alone.", "label": "fortune_telling", "topic": "my lab viva"}
+{"text": "I think I shouldn't feel nervous about my assignment, there's something wrong with me.", "label": "should_statements", "topic": "my assignment"}
+{"text": "Honestly, I'll be humiliated forever if my results goes badly.", "label": "catastrophizing", "topic": "my results"}
+{"text": "Ugh, I'll be humiliated forever if my assignment goes badly. I don't know what to do.", "label": "catastrophizing", "topic": "my assignment"}
+{"text": "Lately If my assignment falls apart, I'll never recover.", "label": "catastrophizing", "topic": "my assignment"}
+{"text": "When people compliment my family, I know they don't really mean it. I don't know what to do.", "label": "disqualifying_positive", "topic": "my family"}
+{"text": "I think If my results falls apart, I'll never recover. It's been on my mind all day.", "label": "catastrophizing", "topic": "my results"}
+{"text": "My results was tiring, so I'm taking a short break. I can't stop thinking about it.", "label": "none", "topic": "my results"}
+{"text": "If my relationship isn't flawless, there's no point in even trying.", "label": "all_or_nothing", "topic": "my relationship"}
+{"text": "I can already tell my job interview won't work out and I'll end up alone.", "label": "fortune_telling", "topic": "my job interview"}
+{"text": "I keep feeling that It feels hopeless, so my lab viva must be hopeless. I can't stop thinking about it.", "label": "emotional_reasoning", "topic": "my lab viva"}
+{"text": "I think I'm sure my friends are laughing at me about my friend. I don't know what to do.", "label": "mind_reading", "topic": "my friend"}
+{"text": "I think Other people shouldn't ever see me struggle with my family. I can't stop thinking about it.", "label": "should_statements", "topic": "my family"}
+{"text": "Lately It doesn't matter that my exam went well, it wasn't a real achievement. I don't know what to do.", "label": "disqualifying_positive", "topic": "my exam"}
+{"text": "I think I feel like nobody cares, so it must be true after my assignment.", "label": "emotional_reasoning", "topic": "my assignment"}
+{"text": "I keep feeling that my relationship was tiring, so I'm taking a short break. I can't stop thinking about it.", "label": "none", "topic": "my relationship"}
+{"text": "I can already tell my presentation won't work out and I'll end up alone. I don't know what to do.", "label": "fortune_telling", "topic": "my presentation"}
+{"text": "If my friend isn't flawless, there's no point in even trying. It's been on my mind all day.", "label": "all_or_nothing", "topic": "my friend"}
+{"text": "Honestly, He's a complete jerk for what happened with my placement.", "label": "labelling", "topic": "my placement"}
+{"text": "I keep feeling that I'm to blame for how my assignment turned out. I can't stop thinking about it.", "label": "personalization", "topic": "my assignment"}
+{"text": "Honestly, I feel like nobody cares, so it must be true after my relationship. It's been on my mind all day.", "label": "emotional_reasoning", "topic": "my relationship"}
+{"text": "I keep feeling that I'm sure my friends are laughing at me about my lab viva.", "label": "mind_reading", "topic": "my lab viva"}
+{"text": "Lately I keep replaying the one thing that went wrong with my friend. It's been on my mind all day.", "label": "mental_filter", "topic": "my friend"}
+{"text": "Lately There is no middle ground, my friend is a total disaster or a perfect success.", "label": "all_or_nothing", "topic": "my friend"}
+{"text": "I'm to blame for how my assignment turned out. It's been on my mind all day.", "label": "personalization", "topic": "my assignment"}
+{"text": "Ugh, If my assignment falls apart, I'll never recover.", "label": "catastrophizing", "topic": "my assignment"}
+{"text": "I feel like nobody cares, so it must be true after my presentation.", "label": "emotional_reasoning", "topic": "my presentation"}
+{"text": "Honestly, This always happens to me, every single time with my exam.", "label": "overgeneralization", "topic": "my exam"}
+{"text": "This always happens to me, every single time with my relationship.", "label": "overgeneralization", "topic": "my relationship"}
+{"text": "My results was tiring, so I'm taking a short break.", "label": "none", "topic": "my results"}
+{"text": "Lately I messed up my lab viva once and now I'm sure I'll never succeed at anything. It's been on my mind all day.", "label": "overgeneralization", "topic": "my lab viva"}
+{"text": "He's a complete jerk for what happened with my project. I don't know what to do.", "label": "labelling", "topic": "my project"}
+{"text": "I messed up my family once and now I'm sure I'll never succeed at anything. I don't know what to do.", "label": "overgeneralization", "topic": "my family"}
+{"text": "Ugh, I keep replaying the one thing that went wrong with my results. I don't know what to do.", "label": "mental_filter", "topic": "my results"}
+{"text": "Ugh, He's a complete jerk for what happened with my assignment. I can't stop thinking about it.", "label": "labelling", "topic": "my assignment"}
+{"text": "Lately It doesn't matter that my job interview went well, it wasn't a real achievement. I can't stop thinking about it.", "label": "disqualifying_positive", "topic": "my job interview"}
+{"text": "If my assignment falls apart, I'll never recover. I don't know what to do.", "label": "catastrophizing", "topic": "my assignment"}
+{"text": "I keep feeling that I keep replaying the one thing that went wrong with my job interview.", "label": "mental_filter", "topic": "my job interview"}
+{"text": "Honestly, I feel like nobody cares, so it must be true after my assignment.", "label": "emotional_reasoning", "topic": "my assignment"}
+{"text": "I'd like some help thinking about my job interview. I don't know what to do.", "label": "none", "topic": "my job interview"}
+{"text": "Ugh, I can already tell my project won't work out and I'll end up alone.", "label": "fortune_telling", "topic": "my project"}
+{"text": "Ugh, Other people shouldn't ever see me struggle with my friend. It's been on my mind all day.", "label": "should_statements", "topic": "my friend"}
+{"text": "I think It doesn't matter that my family went well, it wasn't a real achievement. I don't know what to do.", "label": "disqualifying_positive", "topic": "my family"}
+{"text": "I keep feeling that I'll be humiliated forever if my college goes badly.", "label": "catastrophizing", "topic": "my college"}
+{"text": "I messed up my lab viva once and now I'm sure I'll never succeed at anything. I don't know what to do.", "label": "overgeneralization", "topic": "my lab viva"}
+{"text": "I keep feeling that This always happens to me, every single time with my college. It's been on my mind all day.", "label": "overgeneralization", "topic": "my college"}
+{"text": "I think This always happens to me, every single time with my project.", "label": "overgeneralization", "topic": "my project"}
+{"text": "I think I'd like some help thinking about my friend. I don't know what to do.", "label": "none", "topic": "my friend"}
+{"text": "Ugh, I keep replaying the one thing that went wrong with my placement. I can't stop thinking about it.", "label": "mental_filter", "topic": "my placement"}
+{"text": "Honestly, This always happens to me, every single time with my assignment.", "label": "overgeneralization", "topic": "my assignment"}
+{"text": "I think The good parts of my assignment don't count, only the flaw I made does. I can't stop thinking about it.", "label": "mental_filter", "topic": "my assignment"}
+{"text": "I think The good parts of my family don't count, only the flaw I made does. I don't know what to do.", "label": "mental_filter", "topic": "my family"}
+{"text": "Lately I messed up my assignment once and now I'm sure I'll never succeed at anything.", "label": "overgeneralization", "topic": "my assignment"}
+{"text": "I keep feeling that I'm just a stupid person, look at my lab viva. I can't stop thinking about it.", "label": "labelling", "topic": "my lab viva"}
+{"text": "I keep replaying the one thing that went wrong with my presentation.", "label": "mental_filter", "topic": "my presentation"}
+{"text": "Honestly, They looked at me strangely, they must think my presentation was terrible. I don't know what to do.", "label": "mind_reading", "topic": "my presentation"}
+{"text": "I keep replaying the one thing that went wrong with my relationship. I can't stop thinking about it.", "label": "mental_filter", "topic": "my relationship"}
+{"text": "Lately I'll be humiliated forever if my lab viva goes badly. I don't know what to do.", "label": "catastrophizing", "topic": "my lab viva"}
+{"text": "If my relationship isn't flawless, there's no point in even trying. I don't know what to do.", "label": "all_or_nothing", "topic": "my relationship"}
+{"text": "Honestly, I'm to blame for how my relationship turned out.", "label": "personalization", "topic": "my relationship"}
+{"text": "Lately When people compliment my presentation, I know they don't really mean it.", "label": "disqualifying_positive", "topic": "my presentation"}
+{"text": "Honestly, I'll be humiliated forever if my family goes badly.", "label": "catastrophizing", "topic": "my family"}
+{"text": "I'm to blame for how my friend turned out.", "label": "personalization", "topic": "my friend"}
+{"text": "I think I'm to blame for how my assignment turned out. It's been on my mind all day.", "label": "personalization", "topic": "my assignment"}
+{"text": "Ugh, I shouldn't feel nervous about my project, there's something wrong with me. I can't stop thinking about it.", "label": "should_statements", "topic": "my project"}
+{"text": "Ugh, I'm just a stupid person, look at my results.", "label": "labelling", "topic": "my results"}
+{"text": "I keep feeling that I'm to blame for how my lab viva turned out. I don't know what to do.", "label": "personalization", "topic": "my lab viva"}
+{"text": "I shouldn't feel nervous about my relationship, there's something wrong with me.", "label": "should_statements", "topic": "my relationship"}
+{"text": "I keep feeling that I messed up my lab viva once and now I'm sure I'll never succeed at anything. It's been on my mind all day.", "label": "overgeneralization", "topic": "my lab viva"}
+{"text": "Lately I shouldn't feel nervous about my lab viva, there's something wrong with me.", "label": "should_statements", "topic": "my lab viva"}
+{"text": "I keep feeling that It doesn't matter that my assignment went well, it wasn't a real achievement. I can't stop thinking about it.", "label": "disqualifying_positive", "topic": "my assignment"}
+{"text": "I'm sure my friends are laughing at me about my family.", "label": "mind_reading", "topic": "my family"}
+{"text": "I feel like nobody cares, so it must be true after my college.", "label": "emotional_reasoning", "topic": "my college"}
+{"text": "I think If my presentation isn't flawless, there's no point in even trying. I can't stop thinking about it.", "label": "all_or_nothing", "topic": "my presentation"}
+{"text": "Honestly, I feel like nobody cares, so it must be true after my project. I don't know what to do.", "label": "emotional_reasoning", "topic": "my project"}
+{"text": "I'll be humiliated forever if my exam goes badly. I don't know what to do.", "label": "catastrophizing", "topic": "my exam"}
+{"text": "Lately He's a complete jerk for what happened with my family.", "label": "labelling", "topic": "my family"}
+{"text": "I'll be humiliated forever if my family goes badly.", "label": "catastrophizing", "topic": "my family"}
+{"text": "I keep feeling that There is no middle ground, my assignment is a total disaster or a perfect success. It's been on my mind all day.", "label": "all_or_nothing", "topic": "my assignment"}
+{"text": "I keep feeling that I keep replaying the one thing that went wrong with my friend. I can't stop thinking about it.", "label": "mental_filter", "topic": "my friend"}
+{"text": "There is no middle ground, my presentation is a total disaster or a perfect success.", "label": "all_or_nothing", "topic": "my presentation"}
+{"text": "I keep feeling that If my exam falls apart, I'll never recover. I can't stop thinking about it.", "label": "catastrophizing", "topic": "my exam"}
+{"text": "I think The good parts of my family don't count, only the flaw I made does. I don't know what to do.", "label": "mental_filter", "topic": "my family"}
+{"text": "Ugh, This always happens to me, every single time with my friend.", "label": "overgeneralization", "topic": "my friend"}
+{"text": "I'm just a stupid person, look at my project.", "label": "labelling", "topic": "my project"}
+{"text": "I feel like nobody cares, so it must be true after my presentation. I don't know what to do.", "label": "emotional_reasoning", "topic": "my presentation"}
+{"text": "I think When people compliment my exam, I know they don't really mean it.", "label": "disqualifying_positive", "topic": "my exam"}
+{"text": "I keep feeling that They are in a bad mood and it must be because of me and my assignment.", "label": "personalization", "topic": "my assignment"}
+{"text": "I keep feeling that If my relationship falls apart, I'll never recover. I can't stop thinking about it.", "label": "catastrophizing", "topic": "my relationship"}
+{"text": "Lately I keep replaying the one thing that went wrong with my placement. I can't stop thinking about it.", "label": "mental_filter", "topic": "my placement"}
+{"text": "I feel like nobody cares, so it must be true after my exam. It's been on my mind all day.", "label": "emotional_reasoning", "topic": "my exam"}
+{"text": "Honestly, I can already tell my family won't work out and I'll end up alone. I don't know what to do.", "label": "fortune_telling", "topic": "my family"}
+{"text": "If my relationship falls apart, I'll never recover.", "label": "catastrophizing", "topic": "my relationship"}
+{"text": "Lately I shouldn't feel nervous about my presentation, there's something wrong with me.", "label": "should_statements", "topic": "my presentation"}
+{"text": "Ugh, I feel like nobody cares, so it must be true after my results.", "label": "emotional_reasoning", "topic": "my results"}
+{"text": "Lately I'm just a stupid person, look at my presentation.", "label": "labelling", "topic": "my presentation"}
+{"text": "I feel like nobody cares, so it must be true after my job interview.", "label": "emotional_reasoning", "topic": "my job interview"}
+{"text": "This always happens to me, every single time with my assignment.", "label": "overgeneralization", "topic": "my assignment"}
+{"text": "Ugh, I can already tell my job interview won't work out and I'll end up alone. It's been on my mind all day.", "label": "fortune_telling", "topic": "my job interview"}
+{"text": "Honestly, I'll be humiliated forever if my placement goes badly.", "label": "catastrophizing", "topic": "my placement"}
+{"text": "Honestly, It doesn't matter that my exam went well, it wasn't a real achievement. I can't stop thinking about it.", "label": "disqualifying_positive", "topic": "my exam"}
+{"text": "I keep feeling that I'd like some help thinking about my exam.", "label": "none", "topic": "my exam"}
+{"text": "Lately There is no middle ground, my lab viva is a total disaster or a perfect success. It's been on my mind all day.", "label": "all_or_nothing", "topic": "my lab viva"}
+{"text": "Ugh, When people compliment my exam, I know they don't really mean it.", "label": "disqualifying_positive", "topic": "my exam"}
+{"text": "Ugh, I feel like nobody cares, so it must be true after my friend. It's been on my mind all day.", "label": "emotional_reasoning", "topic": "my friend"}
+{"text": "I keep feeling that They looked at me strangely, they must think my placement was terrible.", "label": "mind_reading", "topic": "my placement"}
+{"text": "Lately If my friend falls apart, I'll never recover.", "label": "catastrophizing", "topic": "my friend"}
+{"text": "I messed up my assignment once and now I'm sure I'll never succeed at anything. It's been on my mind all day.", "label": "overgeneralization", "topic": "my assignment"}
+{"text": "Lately It doesn't matter that my exam went well, it wasn't a real achievement. It's been on my mind all day.", "label": "disqualifying_positive", "topic": "my exam"}
+{"text": "Lately I keep replaying the one thing that went wrong with my placement. I don't know what to do.", "label": "mental_filter", "topic": "my placement"}
+{"text": "This always happens to me, every single time with my friend. I can't stop thinking about it.", "label": "overgeneralization", "topic": "my friend"}
+{"text": "I keep feeling that When people compliment my assignment, I know they don't really mean it. I don't know what to do.", "label": "disqualifying_positive", "topic": "my assignment"}
+{"text": "I keep feeling that I can already tell my project won't work out and I'll end up alone. It's been on my mind all day.", "label": "fortune_telling", "topic": "my project"}
+{"text": "Ugh, If my job interview isn't flawless, there's no point in even trying. It's been on my mind all day.", "label": "all_or_nothing", "topic": "my job interview"}
+{"text": "I think my placement was tiring, so I'm taking a short break. It's been on my mind all day.", "label": "none", "topic": "my placement"}
+{"text": "I keep feeling that There is no middle ground, my results is a total disaster or a perfect success. It's been on my mind all day.", "label": "all_or_nothing", "topic": "my results"}
+{"text": "I'd like some help thinking about my placement. It's been on my mind all day.", "label": "none", "topic": "my placement"}
+{"text": "This always happens to me, every single time with my friend. I can't stop thinking about it.", "label": "overgeneralization", "topic": "my friend"}
+{"text": "Lately I'm certain they'll reject me after my friend.", "label": "fortune_telling", "topic": "my friend"}
+{"text": "I think When people compliment my assignment, I know they don't really mean it.", "label": "disqualifying_positive", "topic": "my assignment"}
+{"text": "Honestly, They looked at me strangely, they must think my results was terrible.", "label": "mind_reading", "topic": "my results"}
+{"text": "This always happens to me, every single time with my project. It's been on my mind all day.", "label": "overgeneralization", "topic": "my project"}
+{"text": "I shouldn't feel nervous about my assignment, there's something wrong with me.", "label": "should_statements", "topic": "my assignment"}
+{"text": "I keep feeling that There is no middle ground, my relationship is a total disaster or a perfect success. I don't know what to do.", "label": "all_or_nothing", "topic": "my relationship"}
+{"text": "I keep feeling that I feel like nobody cares, so it must be true after my results.", "label": "emotional_reasoning", "topic": "my results"}
+{"text": "Lately He's a complete jerk for what happened with my friend. I can't stop thinking about it.", "label": "labelling", "topic": "my friend"}
+{"text": "I keep feeling that He's a complete jerk for what happened with my placement. I don't know what to do.", "label": "labelling", "topic": "my placement"}
+{"text": "I think I shouldn't feel nervous about my project, there's something wrong with me.", "label": "should_statements", "topic": "my project"}
+{"text": "I think I'm certain they'll reject me after my exam.", "label": "fortune_telling", "topic": "my exam"}
+{"text": "Honestly, I'm certain they'll reject me after my results.", "label": "fortune_telling", "topic": "my results"}
+{"text": "Honestly, I'm to blame for how my results turned out. I can't stop thinking about it.", "label": "personalization", "topic": "my results"}
+{"text": "I keep feeling that When people compliment my presentation, I know they don't really mean it.", "label": "disqualifying_positive", "topic": "my presentation"}
+{"text": "Ugh, I feel like nobody cares, so it must be true after my assignment. I can't stop thinking about it.", "label": "emotional_reasoning", "topic": "my assignment"}
+{"text": "Ugh, Other people shouldn't ever see me struggle with my exam. I don't know what to do.", "label": "should_statements", "topic": "my exam"}
+{"text": "Honestly, I feel like nobody cares, so it must be true after my family. I can't stop thinking about it.", "label": "emotional_reasoning", "topic": "my family"}
+{"text": "I think I'm to blame for how my exam turned out. It's been on my mind all day.", "label": "personalization", "topic": "my exam"}
+{"text": "Lately If my project falls apart, I'll never recover. I don't know what to do.", "label": "catastrophizing", "topic": "my project"}
+{"text": "Lately I'm just a stupid person, look at my college. I don't know what to do.", "label": "labelling", "topic": "my college"}
+{"text": "I think I can already tell my lab viva won't work out and I'll end up alone.", "label": "fortune_telling", "topic": "my lab viva"}
+{"text": "I keep feeling that It doesn't matter that my friend went well, it wasn't a real achievement.", "label": "disqualifying_positive", "topic": "my friend"}
+{"text": "I think I shouldn't feel nervous about my college, there's something wrong with me. It's been on my mind all day.", "label": "should_statements", "topic": "my college"}
+{"text": "Honestly, I can already tell my family won't work out and I'll end up alone. I can't stop thinking about it.", "label": "fortune_telling", "topic": "my family"}
+{"text": "I keep feeling that I shouldn't feel nervous about my project, there's something wrong with me. It's been on my mind all day.", "label": "should_statements", "topic": "my project"}
+{"text": "I keep feeling that I can already tell my project won't work out and I'll end up alone.", "label": "fortune_telling", "topic": "my project"}
+{"text": "It feels hopeless, so my placement must be hopeless. I don't know what to do.", "label": "emotional_reasoning", "topic": "my placement"}
+{"text": "I think If my exam isn't flawless, there's no point in even trying. It's been on my mind all day.", "label": "all_or_nothing", "topic": "my exam"}
+{"text": "If my family isn't flawless, there's no point in even trying. I can't stop thinking about it.", "label": "all_or_nothing", "topic": "my family"}
+{"text": "I keep feeling that I can already tell my project won't work out and I'll end up alone.", "label": "fortune_telling", "topic": "my project"}
+{"text": "Ugh, I'm certain they'll reject me after my job interview.", "label": "fortune_telling", "topic": "my job interview"}
+{"text": "Ugh, I'm to blame for how my exam turned out.", "label": "personalization", "topic": "my exam"}
+{"text": "I think It doesn't matter that my presentation went well, it wasn't a real achievement. It's been on my mind all day.", "label": "disqualifying_positive", "topic": "my presentation"}
+{"text": "If my family falls apart, I'll never recover. I can't stop thinking about it.", "label": "catastrophizing", "topic": "my family"}
+{"text": "I'm certain they'll reject me after my placement. It's been on my mind all day.", "label": "fortune_telling", "topic": "my placement"}
+{"text": "Ugh, I can already tell my assignment won't work out and I'll end up alone.", "label": "fortune_telling", "topic": "my assignment"}
+{"text": "Lately I can already tell my placement won't work out and I'll end up alone. I can't stop thinking about it.", "label": "fortune_telling", "topic": "my placement"}
+{"text": "They looked at me strangely, they must think my presentation was terrible.", "label": "mind_reading", "topic": "my presentation"}
+{"text": "I keep feeling that If my project falls apart, I'll never recover. I can't stop thinking about it.", "label": "catastrophizing", "topic": "my project"}
+{"text": "I'd like some help thinking about my project. I can't stop thinking about it.", "label": "none", "topic": "my project"}
+{"text": "Ugh, I messed up my relationship once and now I'm sure I'll never succeed at anything. I don't know what to do.", "label": "overgeneralization", "topic": "my relationship"}
+{"text": "I think If my job interview isn't flawless, there's no point in even trying. I can't stop thinking about it.", "label": "all_or_nothing", "topic": "my job interview"}
+{"text": "I think They are in a bad mood and it must be because of me and my college.", "label": "personalization", "topic": "my college"}
+{"text": "Ugh, I'm just a stupid person, look at my presentation. I can't stop thinking about it.", "label": "labelling", "topic": "my presentation"}
+{"text": "Ugh, He's a complete jerk for what happened with my family. I can't stop thinking about it.", "label": "labelling", "topic": "my family"}
+{"text": "Lately They are in a bad mood and it must be because of me and my college. I can't stop thinking about it.", "label": "personalization", "topic": "my college"}
+{"text": "I keep feeling that They looked at me strangely, they must think my assignment was terrible. It's been on my mind all day.", "label": "mind_reading", "topic": "my assignment"}
+{"text": "Ugh, They looked at me strangely, they must think my job interview was terrible. I don't know what to do.", "label": "mind_reading", "topic": "my job interview"}
+{"text": "Honestly, I'd like some help thinking about my assignment. I can't stop thinking about it.", "label": "none", "topic": "my assignment"}
+{"text": "I keep replaying the one thing that went wrong with my college. I can't stop thinking about it.", "label": "mental_filter", "topic": "my college"}
+{"text": "Ugh, I'd like some help thinking about my project. It's been on my mind all day.", "label": "none", "topic": "my project"}
+{"text": "Honestly, I'd like some help thinking about my college. I can't stop thinking about it.", "label": "none", "topic": "my college"}
+{"text": "Honestly, This always happens to me, every single time with my exam. I don't know what to do.", "label": "overgeneralization", "topic": "my exam"}
+{"text": "Lately I shouldn't feel nervous about my results, there's something wrong with me. I don't know what to do.", "label": "should_statements", "topic": "my results"}
+{"text": "Lately I'm just a stupid person, look at my job interview.", "label": "labelling", "topic": "my job interview"}
+{"text": "Honestly, I'm to blame for how my project turned out.", "label": "personalization", "topic": "my project"}
+{"text": "Honestly, my placement was tiring, so I'm taking a short break.", "label": "none", "topic": "my placement"}
+{"text": "He's a complete jerk for what happened with my presentation. It's been on my mind all day.", "label": "labelling", "topic": "my presentation"}
+{"text": "Ugh, I'd like some help thinking about my job interview. It's been on my mind all day.", "label": "none", "topic": "my job interview"}
+{"text": "Lately They looked at me strangely, they must think my placement was terrible. I can't stop thinking about it.", "label": "mind_reading", "topic": "my placement"}
+{"text": "The good parts of my assignment don't count, only the flaw I made does.", "label": "mental_filter", "topic": "my assignment"}
+{"text": "Lately I'm sure my friends are laughing at me about my results. I don't know what to do.", "label": "mind_reading", "topic": "my results"}
+{"text": "Lately I shouldn't feel nervous about my college, there's something wrong with me.", "label": "should_statements", "topic": "my college"}
+{"text": "Ugh, I'm certain they'll reject me after my lab viva.", "label": "fortune_telling", "topic": "my lab viva"}
+{"text": "I think They looked at me strangely, they must think my family was terrible. I can't stop thinking about it.", "label": "mind_reading", "topic": "my family"}
+{"text": "I keep feeling that It doesn't matter that my relationship went well, it wasn't a real achievement. It's been on my mind all day.", "label": "disqualifying_positive", "topic": "my relationship"}
+{"text": "Lately I shouldn't feel nervous about my project, there's something wrong with me. I don't know what to do.", "label": "should_statements", "topic": "my project"}
+{"text": "I think He's a complete jerk for what happened with my project. It's been on my mind all day.", "label": "labelling", "topic": "my project"}
+{"text": "Lately I'd like some help thinking about my friend.", "label": "none", "topic": "my friend"}
+{"text": "Lately They looked at me strangely, they must think my college was terrible.", "label": "mind_reading", "topic": "my college"}
+{"text": "I keep feeling that This always happens to me, every single time with my presentation. It's been on my mind all day.", "label": "overgeneralization", "topic": "my presentation"}
+{"text": "Honestly, He's a complete jerk for what happened with my project. I can't stop thinking about it.", "label": "labelling", "topic": "my project"}
+{"text": "They are in a bad mood and it must be because of me and my family.", "label": "personalization", "topic": "my family"}
+{"text": "I think my assignment was tiring, so I'm taking a short break.", "label": "none", "topic": "my assignment"}
+{"text": "I keep feeling that This always happens to me, every single time with my job interview. It's been on my mind all day.", "label": "overgeneralization", "topic": "my job interview"}
+{"text": "Ugh, It doesn't matter that my project went well, it wasn't a real achievement.", "label": "disqualifying_positive", "topic": "my project"}
+{"text": "I'm certain they'll reject me after my placement. I can't stop thinking about it.", "label": "fortune_telling", "topic": "my placement"}
+{"text": "Honestly, There is no middle ground, my results is a total disaster or a perfect success. It's been on my mind all day.", "label": "all_or_nothing", "topic": "my results"}
+{"text": "Ugh, He's a complete jerk for what happened with my assignment. It's been on my mind all day.", "label": "labelling", "topic": "my assignment"}
+{"text": "I think I feel like nobody cares, so it must be true after my presentation. It's been on my mind all day.", "label": "emotional_reasoning", "topic": "my presentation"}
+{"text": "If my assignment falls apart, I'll never recover. I don't know what to do.", "label": "catastrophizing", "topic": "my assignment"}
+{"text": "When people compliment my college, I know they don't really mean it. It's been on my mind all day.", "label": "disqualifying_positive", "topic": "my college"}
+{"text": "I feel like nobody cares, so it must be true after my job interview. It's been on my mind all day.", "label": "emotional_reasoning", "topic": "my job interview"}
+{"text": "If my assignment falls apart, I'll never recover.", "label": "catastrophizing", "topic": "my assignment"}
+{"text": "I can already tell my project won't work out and I'll end up alone. I can't stop thinking about it.", "label": "fortune_telling", "topic": "my project"}
+{"text": "Ugh, It feels hopeless, so my friend must be hopeless.", "label": "emotional_reasoning", "topic": "my friend"}
+{"text": "Lately I can already tell my placement won't work out and I'll end up alone. I don't know what to do.", "label": "fortune_telling", "topic": "my placement"}
+{"text": "Honestly, I'm sure my friends are laughing at me about my exam. I can't stop thinking about it.", "label": "mind_reading", "topic": "my exam"}
+{"text": "Ugh, I feel like nobody cares, so it must be true after my job interview. It's been on my mind all day.", "label": "emotional_reasoning", "topic": "my job interview"}
+{"text": "Lately I'm to blame for how my family turned out. I can't stop thinking about it.", "label": "personalization", "topic": "my family"}
+{"text": "If my presentation falls apart, I'll never recover. I don't know what to do.", "label": "catastrophizing", "topic": "my presentation"}
+{"text": "I keep feeling that It feels hopeless, so my presentation must be hopeless.", "label": "emotional_reasoning", "topic": "my presentation"}
+{"text": "I keep replaying the one thing that went wrong with my friend.", "label": "mental_filter", "topic": "my friend"}
+{"text": "I keep feeling that They looked at me strangely, they must think my placement was terrible.", "label": "mind_reading", "topic": "my placement"}
+{"text": "I keep feeling that They looked at me strangely, they must think my exam was terrible.", "label": "mind_reading", "topic": "my exam"}
+{"text": "I keep feeling that I'm just a stupid person, look at my lab viva.", "label": "labelling", "topic": "my lab viva"}
+{"text": "Honestly, I can already tell my assignment won't work out and I'll end up alone.", "label": "fortune_telling", "topic": "my assignment"}
+{"text": "I'm just a stupid person, look at my presentation.", "label": "labelling", "topic": "my presentation"}
+{"text": "I think There is no middle ground, my relationship is a total disaster or a perfect success.", "label": "all_or_nothing", "topic": "my relationship"}
+{"text": "I think He's a complete jerk for what happened with my placement.", "label": "labelling", "topic": "my placement"}
+{"text": "Lately I'm to blame for how my family turned out. It's been on my mind all day.", "label": "personalization", "topic": "my family"}
+{"text": "There is no middle ground, my project is a total disaster or a perfect success. I can't stop thinking about it.", "label": "all_or_nothing", "topic": "my project"}
+{"text": "I think I messed up my job interview once and now I'm sure I'll never succeed at anything.", "label": "overgeneralization", "topic": "my job interview"}
+{"text": "Honestly, I feel like nobody cares, so it must be true after my family. It's been on my mind all day.", "label": "emotional_reasoning", "topic": "my family"}
+{"text": "I'm sure my friends are laughing at me about my job interview.", "label": "mind_reading", "topic": "my job interview"}
+{"text": "Honestly, I'm just a stupid person, look at my college. I can't stop thinking about it.", "label": "labelling", "topic": "my college"}
+{"text": "I keep feeling that I'll be humiliated forever if my project goes badly.", "label": "catastrophizing", "topic": "my project"}
+{"text": "I keep feeling that There is no middle ground, my lab viva is a total disaster or a perfect success. I don't know what to do.", "label": "all_or_nothing", "topic": "my lab viva"}
+{"text": "Ugh, It doesn't matter that my presentation went well, it wasn't a real achievement. I can't stop thinking about it.", "label": "disqualifying_positive", "topic": "my presentation"}
+{"text": "It feels hopeless, so my placement must be hopeless. I can't stop thinking about it.", "label": "emotional_reasoning", "topic": "my placement"}
+{"text": "Lately It doesn't matter that my job interview went well, it wasn't a real achievement. I can't stop thinking about it.", "label": "disqualifying_positive", "topic": "my job interview"}
+{"text": "Lately I keep replaying the one thing that went wrong with my family. It's been on my mind all day.", "label": "mental_filter", "topic": "my family"}
+{"text": "I'm just a stupid person, look at my college.", "label": "labelling", "topic": "my college"}
+{"text": "The good parts of my relationship don't count, only the flaw I made does.", "label": "mental_filter", "topic": "my relationship"}
+{"text": "I keep feeling that my project was tiring, so I'm taking a short break. It's been on my mind all day.", "label": "none", "topic": "my project"}
+{"text": "Ugh, I'm to blame for how my friend turned out.", "label": "personalization", "topic": "my friend"}
+{"text": "I'm sure my friends are laughing at me about my lab viva.", "label": "mind_reading", "topic": "my lab viva"}
+{"text": "I keep feeling that It doesn't matter that my friend went well, it wasn't a real achievement.", "label": "disqualifying_positive", "topic": "my friend"}
+{"text": "He's a complete jerk for what happened with my relationship. I don't know what to do.", "label": "labelling", "topic": "my relationship"}
+{"text": "I messed up my relationship once and now I'm sure I'll never succeed at anything. I can't stop thinking about it.", "label": "overgeneralization", "topic": "my relationship"}
+{"text": "Ugh, It doesn't matter that my job interview went well, it wasn't a real achievement. I can't stop thinking about it.", "label": "disqualifying_positive", "topic": "my job interview"}
+{"text": "Honestly, I messed up my college once and now I'm sure I'll never succeed at anything.", "label": "overgeneralization", "topic": "my college"}
+{"text": "I think It feels hopeless, so my exam must be hopeless. I can't stop thinking about it.", "label": "emotional_reasoning", "topic": "my exam"}
+{"text": "Ugh, I feel like nobody cares, so it must be true after my family. It's been on my mind all day.", "label": "emotional_reasoning", "topic": "my family"}
+{"text": "Lately I'd like some help thinking about my placement.", "label": "none", "topic": "my placement"}
+{"text": "I keep feeling that I feel like nobody cares, so it must be true after my placement. I can't stop thinking about it.", "label": "emotional_reasoning", "topic": "my placement"}
+{"text": "I think I messed up my relationship once and now I'm sure I'll never succeed at anything.", "label": "overgeneralization", "topic": "my relationship"}
+{"text": "I keep feeling that I'm certain they'll reject me after my project. I can't stop thinking about it.", "label": "fortune_telling", "topic": "my project"}
+{"text": "I keep feeling that I'll be humiliated forever if my relationship goes badly.", "label": "catastrophizing", "topic": "my relationship"}
+{"text": "Ugh, I can already tell my family won't work out and I'll end up alone. I don't know what to do.", "label": "fortune_telling", "topic": "my family"}
+{"text": "I think I'm certain they'll reject me after my placement.", "label": "fortune_telling", "topic": "my placement"}
+{"text": "Ugh, If my presentation falls apart, I'll never recover. It's been on my mind all day.", "label": "catastrophizing", "topic": "my presentation"}
+{"text": "I'm to blame for how my friend turned out. It's been on my mind all day.", "label": "personalization", "topic": "my friend"}
+{"text": "I'd like some help thinking about my lab viva.", "label": "none", "topic": "my lab viva"}
+{"text": "Honestly, I can already tell my exam won't work out and I'll end up alone. I can't stop thinking about it.", "label": "fortune_telling", "topic": "my exam"}
+{"text": "Lately They looked at me strangely, they must think my relationship was terrible. I can't stop thinking about it.", "label": "mind_reading", "topic": "my relationship"}
+{"text": "I think I'm just a stupid person, look at my friend. It's been on my mind all day.", "label": "labelling", "topic": "my friend"}
+{"text": "Honestly, He's a complete jerk for what happened with my project.", "label": "labelling", "topic": "my project"}
+{"text": "It doesn't matter that my exam went well, it wasn't a real achievement.", "label": "disqualifying_positive", "topic": "my exam"}
+{"text": "I think I'd like some help thinking about my placement.", "label": "none", "topic": "my placement"}
+{"text": "He's a complete jerk for what happened with my assignment.", "label": "labelling", "topic": "my assignment"}
+{"text": "I keep feeling that When people compliment my job interview, I know they don't really mean it. I can't stop thinking about it.", "label": "disqualifying_positive", "topic": "my job interview"}
+{"text": "I keep feeling that When people compliment my lab viva, I know they don't really mean it.", "label": "disqualifying_positive", "topic": "my lab viva"}
+{"text": "Lately It feels hopeless, so my college must be hopeless. I don't know what to do.", "label": "emotional_reasoning", "topic": "my college"}
+{"text": "I keep feeling that I keep replaying the one thing that went wrong with my friend.", "label": "mental_filter", "topic": "my friend"}
+{"text": "I keep feeling that I'm certain they'll reject me after my results.", "label": "fortune_telling", "topic": "my results"}
+{"text": "Lately When people compliment my exam, I know they don't really mean it.", "label": "disqualifying_positive", "topic": "my exam"}
+{"text": "I think I keep replaying the one thing that went wrong with my relationship.", "label": "mental_filter", "topic": "my relationship"}
+{"text": "I keep feeling that I keep replaying the one thing that went wrong with my family.", "label": "mental_filter", "topic": "my family"}
+{"text": "I keep feeling that It doesn't matter that my results went well, it wasn't a real achievement. It's been on my mind all day.", "label": "disqualifying_positive", "topic": "my results"}
+{"text": "I can already tell my college won't work out and I'll end up alone. I can't stop thinking about it.", "label": "fortune_telling", "topic": "my college"}
+{"text": "Honestly, I can already tell my job interview won't work out and I'll end up alone. I don't know what to do.", "label": "fortune_telling", "topic": "my job interview"}
+{"text": "Other people shouldn't ever see me struggle with my job interview.", "label": "should_statements", "topic": "my job interview"}
+{"text": "If my presentation falls apart, I'll never recover.", "label": "catastrophizing", "topic": "my presentation"}
+{"text": "Lately It doesn't matter that my job interview went well, it wasn't a real achievement. I can't stop thinking about it.", "label": "disqualifying_positive", "topic": "my job interview"}
+{"text": "I keep feeling that He's a complete jerk for what happened with my relationship. I don't know what to do.", "label": "labelling", "topic": "my relationship"}
+{"text": "Ugh, It feels hopeless, so my friend must be hopeless. It's been on my mind all day.", "label": "emotional_reasoning", "topic": "my friend"}
+{"text": "Honestly, I'm to blame for how my relationship turned out. I don't know what to do.", "label": "personalization", "topic": "my relationship"}
+{"text": "I keep feeling that my relationship was tiring, so I'm taking a short break. I can't stop thinking about it.", "label": "none", "topic": "my relationship"}
+{"text": "I messed up my exam once and now I'm sure I'll never succeed at anything. I don't know what to do.", "label": "overgeneralization", "topic": "my exam"}
+{"text": "Lately I'm to blame for how my friend turned out. I don't know what to do.", "label": "personalization", "topic": "my friend"}
+{"text": "I messed up my presentation once and now I'm sure I'll never succeed at anything. I don't know what to do.", "label": "overgeneralization", "topic": "my presentation"}
+{"text": "My job interview was tiring, so I'm taking a short break. I can't stop thinking about it.", "label": "none", "topic": "my job interview"}
+{"text": "I think my assignment was tiring, so I'm taking a short break. I can't stop thinking about it.", "label": "none", "topic": "my assignment"}
+{"text": "There is no middle ground, my lab viva is a total disaster or a perfect success.", "label": "all_or_nothing", "topic": "my lab viva"}
+{"text": "I think I'll be humiliated forever if my assignment goes badly.", "label": "catastrophizing", "topic": "my assignment"}
+{"text": "I'm to blame for how my project turned out.", "label": "personalization", "topic": "my project"}
+{"text": "There is no middle ground, my results is a total disaster or a perfect success. I don't know what to do.", "label": "all_or_nothing", "topic": "my results"}
+{"text": "I'm certain they'll reject me after my relationship. I don't know what to do.", "label": "fortune_telling", "topic": "my relationship"}
+{"text": "I keep feeling that The good parts of my friend don't count, only the flaw I made does. I can't stop thinking about it.", "label": "mental_filter", "topic": "my friend"}
+{"text": "I keep feeling that They looked at me strangely, they must think my project was terrible.", "label": "mind_reading", "topic": "my project"}
+{"text": "Lately He's a complete jerk for what happened with my college. I can't stop thinking about it.", "label": "labelling", "topic": "my college"}
+{"text": "I keep feeling that I'm just a stupid person, look at my friend. It's been on my mind all day.", "label": "labelling", "topic": "my friend"}
+{"text": "I keep feeling that I'm just a stupid person, look at my placement. It's been on my mind all day.", "label": "labelling", "topic": "my placement"}
+{"text": "I think The good parts of my lab viva don't count, only the flaw I made does. It's been on my mind all day.", "label": "mental_filter", "topic": "my lab viva"}
+{"text": "I'd like some help thinking about my college.", "label": "none", "topic": "my college"}
+{"text": "I think There is no middle ground, my placement is a total disaster or a perfect success. It's been on my mind all day.", "label": "all_or_nothing", "topic": "my placement"}
+{"text": "I keep feeling that If my results falls apart, I'll never recover.", "label": "catastrophizing", "topic": "my results"}
+{"text": "Honestly, The good parts of my friend don't count, only the flaw I made does. I can't stop thinking about it.", "label": "mental_filter", "topic": "my friend"}
+{"text": "Lately He's a complete jerk for what happened with my friend. It's been on my mind all day.", "label": "labelling", "topic": "my friend"}
+{"text": "They looked at me strangely, they must think my project was terrible.", "label": "mind_reading", "topic": "my project"}
+{"text": "I think They looked at me strangely, they must think my relationship was terrible.", "label": "mind_reading", "topic": "my relationship"}
+{"text": "I think I keep replaying the one thing that went wrong with my relationship. It's been on my mind all day.", "label": "mental_filter", "topic": "my relationship"}
+{"text": "Honestly, If my project isn't flawless, there's no point in even trying. I don't know what to do.", "label": "all_or_nothing", "topic": "my project"}
+{"text": "Ugh, When people compliment my placement, I know they don't really mean it.", "label": "disqualifying_positive", "topic": "my placement"}
+{"text": "I think They are in a bad mood and it must be because of me and my exam. It's been on my mind all day.", "label": "personalization", "topic": "my exam"}
+{"text": "I'll be humiliated forever if my assignment goes badly. I can't stop thinking about it.", "label": "catastrophizing", "topic": "my assignment"}
+{"text": "Ugh, If my project isn't flawless, there's no point in even trying. It's been on my mind all day.", "label": "all_or_nothing", "topic": "my project"}
+{"text": "Lately They are in a bad mood and it must be because of me and my project.", "label": "personalization", "topic": "my project"}
+{"text": "Honestly, They are in a bad mood and it must be because of me and my friend. It's been on my mind all day.", "label": "personalization", "topic": "my friend"}
+{"text": "Lately I'm just a stupid person, look at my friend. I can't stop thinking about it.", "label": "labelling", "topic": "my friend"}
+{"text": "I keep feeling that They looked at me strangely, they must think my project was terrible.", "label": "mind_reading", "topic": "my project"}
+{"text": "I think my friend was tiring, so I'm taking a short break. I don't know what to do.", "label": "none", "topic": "my friend"}
+{"text": "Honestly, He's a complete jerk for what happened with my placement.", "label": "labelling", "topic": "my placement"}
+{"text": "I think Other people shouldn't ever see me struggle with my job interview.", "label": "should_statements", "topic": "my job interview"}
+{"text": "I think There is no middle ground, my results is a total disaster or a perfect success. I can't stop thinking about it.", "label": "all_or_nothing", "topic": "my results"}
+{"text": "I'd like some help thinking about my college. I can't stop thinking about it.", "label": "none", "topic": "my college"}
+{"text": "I keep replaying the one thing that went wrong with my assignment.", "label": "mental_filter", "topic": "my assignment"}
+{"text": "I'm sure my friends are laughing at me about my placement. It's been on my mind all day.", "label": "mind_reading", "topic": "my placement"}
+{"text": "This always happens to me, every single time with my college. It's been on my mind all day.", "label": "overgeneralization", "topic": "my college"}
+{"text": "I think I'd like some help thinking about my placement.", "label": "none", "topic": "my placement"}
+{"text": "I keep feeling that It doesn't matter that my results went well, it wasn't a real achievement. I don't know what to do.", "label": "disqualifying_positive", "topic": "my results"}
+{"text": "Ugh, I'm just a stupid person, look at my project. It's been on my mind all day.", "label": "labelling", "topic": "my project"}
+{"text": "Lately my results was tiring, so I'm taking a short break. It's been on my mind all day.", "label": "none", "topic": "my results"}
+{"text": "Ugh, I messed up my relationship once and now I'm sure I'll never succeed at anything. It's been on my mind all day.", "label": "overgeneralization", "topic": "my relationship"}
+{"text": "Ugh, If my family isn't flawless, there's no point in even trying. I can't stop thinking about it.", "label": "all_or_nothing", "topic": "my family"}
+{"text": "Lately I messed up my lab viva once and now I'm sure I'll never succeed at anything. I don't know what to do.", "label": "overgeneralization", "topic": "my lab viva"}
+{"text": "Lately It feels hopeless, so my relationship must be hopeless.", "label": "emotional_reasoning", "topic": "my relationship"}
+{"text": "Honestly, It doesn't matter that my job interview went well, it wasn't a real achievement. It's been on my mind all day.", "label": "disqualifying_positive", "topic": "my job interview"}
+{"text": "They are in a bad mood and it must be because of me and my assignment.", "label": "personalization", "topic": "my assignment"}
+{"text": "I think It doesn't matter that my results went well, it wasn't a real achievement. I can't stop thinking about it.", "label": "disqualifying_positive", "topic": "my results"}
+{"text": "When people compliment my project, I know they don't really mean it. I don't know what to do.", "label": "disqualifying_positive", "topic": "my project"}
+{"text": "This always happens to me, every single time with my family. I can't stop thinking about it.", "label": "overgeneralization", "topic": "my family"}
+{"text": "I think I feel like nobody cares, so it must be true after my lab viva. I don't know what to do.", "label": "emotional_reasoning", "topic": "my lab viva"}
+{"text": "I think There is no middle ground, my assignment is a total disaster or a perfect success. I can't stop thinking about it.", "label": "all_or_nothing", "topic": "my assignment"}
+{"text": "I think Other people shouldn't ever see me struggle with my friend.", "label": "should_statements", "topic": "my friend"}
+{"text": "They are in a bad mood and it must be because of me and my family. It's been on my mind all day.", "label": "personalization", "topic": "my family"}
+{"text": "Ugh, I feel like nobody cares, so it must be true after my relationship. I don't know what to do.", "label": "emotional_reasoning", "topic": "my relationship"}
+{"text": "I keep feeling that If my college falls apart, I'll never recover.", "label": "catastrophizing", "topic": "my college"}
+{"text": "Honestly, I keep replaying the one thing that went wrong with my college. It's been on my mind all day.", "label": "mental_filter", "topic": "my college"}
+{"text": "Lately I shouldn't feel nervous about my job interview, there's something wrong with me. It's been on my mind all day.", "label": "should_statements", "topic": "my job interview"}
+{"text": "Honestly, I'll be humiliated forever if my job interview goes badly. It's been on my mind all day.", "label": "catastrophizing", "topic": "my job interview"}
+{"text": "Ugh, They looked at me strangely, they must think my project was terrible. I don't know what to do.", "label": "mind_reading", "topic": "my project"}
+{"text": "Ugh, I can already tell my results won't work out and I'll end up alone. It's been on my mind all day.", "label": "fortune_telling", "topic": "my results"}
+{"text": "I keep feeling that I feel like nobody cares, so it must be true after my lab viva. I can't stop thinking about it.", "label": "emotional_reasoning", "topic": "my lab viva"}
+{"text": "It feels hopeless, so my friend must be hopeless. I can't stop thinking about it.", "label": "emotional_reasoning", "topic": "my friend"}
+{"text": "Ugh, There is no middle ground, my project is a total disaster or a perfect success. I can't stop thinking about it.", "label": "all_or_nothing", "topic": "my project"}
+{"text": "Honestly, I'm sure my friends are laughing at me about my exam.", "label": "mind_reading", "topic": "my exam"}
+{"text": "Lately I'd like some help thinking about my job interview. I don't know what to do.", "label": "none", "topic": "my job interview"}
+{"text": "If my placement falls apart, I'll never recover. I can't stop thinking about it.", "label": "catastrophizing", "topic": "my placement"}
+{"text": "I keep feeling that Other people shouldn't ever see me struggle with my presentation.", "label": "should_statements", "topic": "my presentation"}
+{"text": "I keep feeling that I'm sure my friends are laughing at me about my lab viva. I can't stop thinking about it.", "label": "mind_reading", "topic": "my lab viva"}
+{"text": "I think Other people shouldn't ever see me struggle with my presentation.", "label": "should_statements", "topic": "my presentation"}
+{"text": "Ugh, my job interview was tiring, so I'm taking a short break.", "label": "none", "topic": "my job interview"}
+{"text": "The good parts of my presentation don't count, only the flaw I made does. It's been on my mind all day.", "label": "mental_filter", "topic": "my presentation"}
+{"text": "I keep feeling that They looked at me strangely, they must think my relationship was terrible. I don't know what to do.", "label": "mind_reading", "topic": "my relationship"}
+{"text": "Lately This always happens to me, every single time with my job interview. I don't know what to do.", "label": "overgeneralization", "topic": "my job interview"}
+{"text": "I think Other people shouldn't ever see me struggle with my project. I can't stop thinking about it.", "label": "should_statements", "topic": "my project"}
+{"text": "I shouldn't feel nervous about my job interview, there's something wrong with me. It's been on my mind all day.", "label": "should_statements", "topic": "my job interview"}
+{"text": "They looked at me strangely, they must think my exam was terrible. It's been on my mind all day.", "label": "mind_reading", "topic": "my exam"}
+{"text": "I think I shouldn't feel nervous about my project, there's something wrong with me. It's been on my mind all day.", "label": "should_statements", "topic": "my project"}
+{"text": "Ugh, I shouldn't feel nervous about my results, there's something wrong with me. I don't know what to do.", "label": "should_statements", "topic": "my results"}
+{"text": "Honestly, They looked at me strangely, they must think my placement was terrible. I don't know what to do.", "label": "mind_reading", "topic": "my placement"}
+{"text": "I feel like nobody cares, so it must be true after my presentation. I don't know what to do.", "label": "emotional_reasoning", "topic": "my presentation"}
+{"text": "I messed up my placement once and now I'm sure I'll never succeed at anything. I don't know what to do.", "label": "overgeneralization", "topic": "my placement"}
+{"text": "Lately When people compliment my results, I know they don't really mean it. It's been on my mind all day.", "label": "disqualifying_positive", "topic": "my results"}
+{"text": "I keep feeling that I keep replaying the one thing that went wrong with my project.", "label": "mental_filter", "topic": "my project"}
+{"text": "Lately It feels hopeless, so my placement must be hopeless. I don't know what to do.", "label": "emotional_reasoning", "topic": "my placement"}
+{"text": "I'll be humiliated forever if my assignment goes badly.", "label": "catastrophizing", "topic": "my assignment"}
+{"text": "Honestly, He's a complete jerk for what happened with my lab viva. I can't stop thinking about it.", "label": "labelling", "topic": "my lab viva"}
+{"text": "I think my exam was tiring, so I'm taking a short break. I don't know what to do.", "label": "none", "topic": "my exam"}
+{"text": "I keep feeling that If my job interview falls apart, I'll never recover. It's been on my mind all day.", "label": "catastrophizing", "topic": "my job interview"}
+{"text": "I keep feeling that my friend was tiring, so I'm taking a short break. I can't stop thinking about it.", "label": "none", "topic": "my friend"}
+{"text": "It doesn't matter that my exam went well, it wasn't a real achievement. I don't know what to do.", "label": "disqualifying_positive", "topic": "my exam"}
+{"text": "Ugh, I'm certain they'll reject me after my assignment.", "label": "fortune_telling", "topic": "my assignment"}
+{"text": "Ugh, The good parts of my exam don't count, only the flaw I made does.", "label": "mental_filter", "topic": "my exam"}
+{"text": "There is no middle ground, my exam is a total disaster or a perfect success.", "label": "all_or_nothing", "topic": "my exam"}
+{"text": "Lately They are in a bad mood and it must be because of me and my friend. I don't know what to do.", "label": "personalization", "topic": "my friend"}
+{"text": "Ugh, I'm sure my friends are laughing at me about my assignment.", "label": "mind_reading", "topic": "my assignment"}
+{"text": "They are in a bad mood and it must be because of me and my results. I can't stop thinking about it.", "label": "personalization", "topic": "my results"}
+{"text": "I keep feeling that I shouldn't feel nervous about my friend, there's something wrong with me. I can't stop thinking about it.", "label": "should_statements", "topic": "my friend"}
+{"text": "When people compliment my presentation, I know they don't really mean it.", "label": "disqualifying_positive", "topic": "my presentation"}
+{"text": "I keep feeling that Other people shouldn't ever see me struggle with my relationship.", "label": "should_statements", "topic": "my relationship"}
+{"text": "I keep feeling that There is no middle ground, my job interview is a total disaster or a perfect success.", "label": "all_or_nothing", "topic": "my job interview"}
+{"text": "Ugh, I'd like some help thinking about my project. I can't stop thinking about it.", "label": "none", "topic": "my project"}
+{"text": "I can already tell my placement won't work out and I'll end up alone.", "label": "fortune_telling", "topic": "my placement"}
+{"text": "Honestly, The good parts of my placement don't count, only the flaw I made does. I don't know what to do.", "label": "mental_filter", "topic": "my placement"}
+{"text": "My relationship was tiring, so I'm taking a short break.", "label": "none", "topic": "my relationship"}
+{"text": "Lately If my assignment isn't flawless, there's no point in even trying. It's been on my mind all day.", "label": "all_or_nothing", "topic": "my assignment"}
+{"text": "They looked at me strangely, they must think my presentation was terrible.", "label": "mind_reading", "topic": "my presentation"}
+{"text": "Ugh, I shouldn't feel nervous about my family, there's something wrong with me.", "label": "should_statements", "topic": "my family"}
+{"text": "I can already tell my job interview won't work out and I'll end up alone. It's been on my mind all day.", "label": "fortune_telling", "topic": "my job interview"}
+{"text": "I'd like some help thinking about my project. I can't stop thinking about it.", "label": "none", "topic": "my project"}
+{"text": "Honestly, I keep replaying the one thing that went wrong with my lab viva.", "label": "mental_filter", "topic": "my lab viva"}
+{"text": "Honestly, They are in a bad mood and it must be because of me and my project.", "label": "personalization", "topic": "my project"}
+{"text": "I think They looked at me strangely, they must think my college was terrible.", "label": "mind_reading", "topic": "my college"}
+{"text": "I keep feeling that This always happens to me, every single time with my presentation. I don't know what to do.", "label": "overgeneralization", "topic": "my presentation"}
+{"text": "The good parts of my placement don't count, only the flaw I made does.", "label": "mental_filter", "topic": "my placement"}
+{"text": "Honestly, The good parts of my job interview don't count, only the flaw I made does. I can't stop thinking about it.", "label": "mental_filter", "topic": "my job interview"}
+{"text": "Ugh, This always happens to me, every single time with my placement.", "label": "overgeneralization", "topic": "my placement"}
+{"text": "I can already tell my relationship won't work out and I'll end up alone. I don't know what to do.", "label": "fortune_telling", "topic": "my relationship"}
+{"text": "I think I can already tell my college won't work out and I'll end up alone. I can't stop thinking about it.", "label": "fortune_telling", "topic": "my college"}
+{"text": "I'll be humiliated forever if my friend goes badly.", "label": "catastrophizing", "topic": "my friend"}
+{"text": "Honestly, The good parts of my assignment don't count, only the flaw I made does. I can't stop thinking about it.", "label": "mental_filter", "topic": "my assignment"}
+{"text": "I feel like nobody cares, so it must be true after my project.", "label": "emotional_reasoning", "topic": "my project"}
+{"text": "The good parts of my assignment don't count, only the flaw I made does.", "label": "mental_filter", "topic": "my assignment"}
+{"text": "I keep feeling that Other people shouldn't ever see me struggle with my family. I can't stop thinking about it.", "label": "should_statements", "topic": "my family"}
+{"text": "I feel like nobody cares, so it must be true after my placement. I can't stop thinking about it.", "label": "emotional_reasoning", "topic": "my placement"}
+{"text": "Lately I'm sure my friends are laughing at me about my assignment.", "label": "mind_reading", "topic": "my assignment"}
+{"text": "Lately They looked at me strangely, they must think my lab viva was terrible. It's been on my mind all day.", "label": "mind_reading", "topic": "my lab viva"}
+{"text": "They are in a bad mood and it must be because of me and my family.", "label": "personalization", "topic": "my family"}
+{"text": "I messed up my exam once and now I'm sure I'll never succeed at anything.", "label": "overgeneralization", "topic": "my exam"}
+{"text": "I keep feeling that I'll be humiliated forever if my relationship goes badly. It's been on my mind all day.", "label": "catastrophizing", "topic": "my relationship"}
+{"text": "Lately I'm certain they'll reject me after my assignment.", "label": "fortune_telling", "topic": "my assignment"}
+{"text": "Honestly, If my job interview isn't flawless, there's no point in even trying. It's been on my mind all day.", "label": "all_or_nothing", "topic": "my job interview"}
+{"text": "Ugh, They are in a bad mood and it must be because of me and my project. It's been on my mind all day.", "label": "personalization", "topic": "my project"}
+{"text": "I'm just a stupid person, look at my project. I don't know what to do.", "label": "labelling", "topic": "my project"}
+{"text": "The good parts of my presentation don't count, only the flaw I made does. It's been on my mind all day.", "label": "mental_filter", "topic": "my presentation"}
+{"text": "I shouldn't feel nervous about my job interview, there's something wrong with me. I can't stop thinking about it.", "label": "should_statements", "topic": "my job interview"}
+{"text": "Honestly, They are in a bad mood and it must be because of me and my family. It's been on my mind all day.", "label": "personalization", "topic": "my family"}
+{"text": "I think They are in a bad mood and it must be because of me and my college. I can't stop thinking about it.", "label": "personalization", "topic": "my college"}
+{"text": "They are in a bad mood and it must be because of me and my assignment.", "label": "personalization", "topic": "my assignment"}
+{"text": "Honestly, This always happens to me, every single time with my results. I can't stop thinking about it.", "label": "overgeneralization", "topic": "my results"}
+{"text": "I keep feeling that I keep replaying the one thing that went wrong with my exam.", "label": "mental_filter", "topic": "my exam"}
+{"text": "I keep feeling that There is no middle ground, my exam is a total disaster or a perfect success. I can't stop thinking about it.", "label": "all_or_nothing", "topic": "my exam"}
+{"text": "Ugh, Other people shouldn't ever see me struggle with my assignment. I can't stop thinking about it.", "label": "should_statements", "topic": "my assignment"}
+{"text": "I think Other people shouldn't ever see me struggle with my lab viva. It's been on my mind all day.", "label": "should_statements", "topic": "my lab viva"}
+{"text": "I think I keep replaying the one thing that went wrong with my project. I don't know what to do.", "label": "mental_filter", "topic": "my project"}
+{"text": "They are in a bad mood and it must be because of me and my exam.", "label": "personalization", "topic": "my exam"}
+{"text": "Ugh, I'm sure my friends are laughing at me about my results. I can't stop thinking about it.", "label": "mind_reading", "topic": "my results"}
+{"text": "Ugh, If my lab viva isn't flawless, there's no point in even trying. I don't know what to do.", "label": "all_or_nothing", "topic": "my lab viva"}
+{"text": "I keep feeling that There is no middle ground, my results is a total disaster or a perfect success.", "label": "all_or_nothing", "topic": "my results"}
+{"text": "I keep feeling that I'm certain they'll reject me after my family. I can't stop thinking about it.", "label": "fortune_telling", "topic": "my family"}
+{"text": "If my relationship isn't flawless, there's no point in even trying. It's been on my mind all day.", "label": "all_or_nothing", "topic": "my relationship"}
+{"text": "I keep feeling that I messed up my family once and now I'm sure I'll never succeed at anything. I don't know what to do.", "label": "overgeneralization", "topic": "my family"}
+{"text": "I keep feeling that The good parts of my assignment don't count, only the flaw I made does.", "label": "mental_filter", "topic": "my assignment"}
+{"text": "Honestly, It doesn't matter that my project went well, it wasn't a real achievement. It's been on my mind all day.", "label": "disqualifying_positive", "topic": "my project"}
+{"text": "I'm sure my friends are laughing at me about my assignment. I don't know what to do.", "label": "mind_reading", "topic": "my assignment"}
+{"text": "It doesn't matter that my friend went well, it wasn't a real achievement.", "label": "disqualifying_positive", "topic": "my friend"}
+{"text": "Lately The good parts of my results don't count, only the flaw I made does.", "label": "mental_filter", "topic": "my results"}
+{"text": "I keep feeling that I'm just a stupid person, look at my assignment. It's been on my mind all day.", "label": "labelling", "topic": "my assignment"}
+{"text": "Honestly, They looked at me strangely, they must think my assignment was terrible. It's been on my mind all day.", "label": "mind_reading", "topic": "my assignment"}
+{"text": "Lately I'm just a stupid person, look at my placement. It's been on my mind all day.", "label": "labelling", "topic": "my placement"}
+{"text": "If my college isn't flawless, there's no point in even trying.", "label": "all_or_nothing", "topic": "my college"}
+{"text": "I keep feeling that There is no middle ground, my placement is a total disaster or a perfect success.", "label": "all_or_nothing", "topic": "my placement"}
+{"text": "I feel like nobody cares, so it must be true after my exam. I don't know what to do.", "label": "emotional_reasoning", "topic": "my exam"}
+{"text": "Lately There is no middle ground, my lab viva is a total disaster or a perfect success.", "label": "all_or_nothing", "topic": "my lab viva"}
+{"text": "I can already tell my exam won't work out and I'll end up alone. I don't know what to do.", "label": "fortune_telling", "topic": "my exam"}
+{"text": "Ugh, It doesn't matter that my friend went well, it wasn't a real achievement.", "label": "disqualifying_positive", "topic": "my friend"}
+{"text": "Lately Other people shouldn't ever see me struggle with my job interview.", "label": "should_statements", "topic": "my job interview"}
+{"text": "I think They looked at me strangely, they must think my family was terrible.", "label": "mind_reading", "topic": "my family"}
+{"text": "Honestly, This always happens to me, every single time with my placement. It's been on my mind all day.", "label": "overgeneralization", "topic": "my placement"}
+{"text": "My results was tiring, so I'm taking a short break. I can't stop thinking about it.", "label": "none", "topic": "my results"}
+{"text": "I shouldn't feel nervous about my job interview, there's something wrong with me.", "label": "should_statements", "topic": "my job interview"}
+{"text": "Lately I'm just a stupid person, look at my relationship. I don't know what to do.", "label": "labelling", "topic": "my relationship"}
+{"text": "Lately I shouldn't feel nervous about my lab viva, there's something wrong with me. I don't know what to do.", "label": "should_statements", "topic": "my lab viva"}
+{"text": "Lately Other people shouldn't ever see me struggle with my project. It's been on my mind all day.", "label": "should_statements", "topic": "my project"}
+{"text": "I'll be humiliated forever if my lab viva goes badly. It's been on my mind all day.", "label": "catastrophizing", "topic": "my lab viva"}
+{"text": "Lately I'm to blame for how my placement turned out. I can't stop thinking about it.", "label": "personalization", "topic": "my placement"}
+{"text": "I keep feeling that I shouldn't feel nervous about my results, there's something wrong with me.", "label": "should_statements", "topic": "my results"}
+{"text": "Ugh, They are in a bad mood and it must be because of me and my friend. It's been on my mind all day.", "label": "personalization", "topic": "my friend"}
