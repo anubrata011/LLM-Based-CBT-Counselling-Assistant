@@ -1,20 +1,26 @@
+
 """
 Multi-turn CBT counselling engine.
 
-The assistant first explores the student's situation through one question at a time.
-It only classifies the combined user conversation and presents a final reflection
+The assistant explores the user's situation through one question at a time.
+It classifies individual user messages and aggregates the predictions
 when the user chooses "Finish reflection".
 """
+
 import re
 
 from src.config import *
 from src.safety import check_risk, CRISIS_MESSAGE
 from src.distortion_model import DistortionClassifier
 from src.prompts import build_messages
-from src.make_dataset import R
+
 
 MIN_TURNS_FOR_SUMMARY = 10
 MAX_HISTORY_MESSAGES = 20
+
+# Minimum model score required to consider a possible pattern.
+MIN_PATTERN_SCORE = 0.20
+
 STAGE_NAMES = [
     "Check-in",
     "Understand the situation",
@@ -30,8 +36,7 @@ STAGE_NAMES = [
     "Final reflection",
 ]
 
-# A fixed, non-repeating ten-turn path. The LLM is still used for generation
-# elsewhere, but its generated questions cannot override this progression.
+# Fixed ten-turn path.
 EXPLORATION_QUESTIONS = [
     "What has been happening that has been troubling you?",
     "When you think about this situation, what is the main thought that comes to mind?",
@@ -51,8 +56,10 @@ FORBIDDEN = re.compile(
     re.I,
 )
 
+
 class RuleBackend:
-    """Simple offline conversational fallback when the LLM is unavailable."""
+    """Offline conversational fallback."""
+
     name = "rule-based"
 
     def generate(self, user_text, distortion, stage, history):
@@ -62,6 +69,7 @@ class RuleBackend:
             3: "What emotions did you feel, and how strong was each one from 0 to 100?",
             4: "How did this situation affect you, and what worries you most about it?",
         }
+
         return questions.get(
             stage,
             "Thank you for talking this through. You can choose Finish reflection when you feel ready."
@@ -69,57 +77,85 @@ class RuleBackend:
 
     def final(self, transcript, distortion, confidence, history):
         label = distortion.replace("_", " ")
+
         if distortion == "none":
             pattern_text = (
                 "I couldn't identify one clear thinking pattern from the conversation. "
                 "That is okay; one label may not describe the whole experience."
             )
         else:
-            description = DISTORTIONS.get(distortion, "a possible unhelpful thinking pattern")
+            description = DISTORTIONS.get(
+                distortion,
+                "a possible unhelpful thinking pattern"
+            )
             pattern_text = (
                 f"A possible pattern to reflect on is **{label}**. "
                 f"This generally means {str(description).lower()}"
             )
+
         return (
-            "Thank you for sharing your experience. " + pattern_text +
-            "\n\nA more balanced way to look at the situation is to separate what happened "
+            "Thank you for sharing your experience. "
+            + pattern_text
+            + "\n\nA more balanced way to look at the situation is to separate what happened "
             "from what you fear it means. One difficult event does not by itself decide what "
             "will happen next. Consider one small, realistic step you can take now. "
             "This is an educational reflection, not a clinical diagnosis."
         )
 
+
 class HFBackend:
     """Qwen2.5-0.5B-Instruct with optional local LoRA adapter."""
+
     def __init__(self, use_lora=True):
         import os
         import torch
         from transformers import AutoTokenizer, AutoModelForCausalLM
 
         self.torch = torch
+
         self.tok = AutoTokenizer.from_pretrained(GENERATOR_BASE)
+
         self.model = AutoModelForCausalLM.from_pretrained(
-            GENERATOR_BASE, torch_dtype=torch.float32
+            GENERATOR_BASE,
+            torch_dtype=torch.float32
         )
+
         self.name = "Qwen2.5-0.5B (prompted)"
+
         if use_lora and os.path.isdir(GENERATOR_LORA_DIR):
             from peft import PeftModel
-            self.model = PeftModel.from_pretrained(self.model, GENERATOR_LORA_DIR)
+
+            self.model = PeftModel.from_pretrained(
+                self.model,
+                GENERATOR_LORA_DIR
+            )
             self.name = "Qwen2.5-0.5B + LoRA"
+
         self.dev = "cuda" if torch.cuda.is_available() else "cpu"
+
         self.model.to(self.dev)
         self.model.eval()
+
         if self.tok.pad_token_id is None:
             self.tok.pad_token = self.tok.eos_token
 
     def _generate(self, messages, max_new_tokens=180):
         prompt = self.tok.apply_chat_template(
-            messages, tokenize=False, add_generation_prompt=True
+            messages,
+            tokenize=False,
+            add_generation_prompt=True
         )
+
         encoded = self.tok(
-            prompt, return_tensors="pt", truncation=True, max_length=2048
+            prompt,
+            return_tensors="pt",
+            truncation=True,
+            max_length=2048
         )
+
         input_ids = encoded["input_ids"].to(self.dev)
         attention_mask = encoded["attention_mask"].to(self.dev)
+
         with self.torch.no_grad():
             output = self.model.generate(
                 input_ids=input_ids,
@@ -130,18 +166,26 @@ class HFBackend:
                 top_p=0.9,
                 repetition_penalty=1.1,
                 pad_token_id=self.tok.pad_token_id,
-                eos_token_id=self.tok.eos_token_id,
+                eos_token_id=self.tok.eos_token_id
             )
+
         return self.tok.decode(
-            output[0][input_ids.shape[1]:], skip_special_tokens=True
+            output[0][input_ids.shape[1]:],
+            skip_special_tokens=True
         ).strip()
 
     def generate(self, user_text, distortion, stage, history):
-        return self._generate(build_messages(user_text, distortion, stage, history))
+        return self._generate(
+            build_messages(user_text, distortion, stage, history)
+        )
 
     def final(self, transcript, distortion, confidence, history):
         label = distortion.replace("_", " ")
-        description = DISTORTIONS.get(distortion, "no single clear pattern")
+        description = DISTORTIONS.get(
+            distortion,
+            "no single clear pattern"
+        )
+
         system = (
             "You are an educational CBT reflection assistant, not a therapist. "
             "Review the complete conversation and write a concise final reflection. "
@@ -151,21 +195,30 @@ class HFBackend:
             "thought and one small practical next step. Do not diagnose or prescribe. "
             "Do not ask another question. Use plain, supportive language."
         )
+
         user = (
             f"Possible classifier label: {label} ({description}). "
-            f"Classifier score: {confidence:.3f}. Treat this only as a clue, not a diagnosis.\n\n"
-            f"Full conversation:\n{transcript}\n\nWrite the final reflection."
-        )
-        return self._generate(
-            [{"role": "system", "content": system},
-             {"role": "user", "content": user}],
-            max_new_tokens=240,
+            f"Classifier score: {confidence:.3f}. "
+            "Treat this only as a clue, not a diagnosis.\n\n"
+            f"Full conversation:\n{transcript}\n\n"
+            "Write the final reflection."
         )
 
+        return self._generate(
+            [
+                {"role": "system", "content": system},
+                {"role": "user", "content": user}
+            ],
+            max_new_tokens=240
+        )
+
+
 class CBTCounsellor:
+
     def __init__(self, backend="auto"):
         self.clf = DistortionClassifier()
         self.rule = RuleBackend()
+
         if backend == "rule":
             self.llm = self.rule
         else:
@@ -173,10 +226,12 @@ class CBTCounsellor:
                 self.llm = HFBackend()
             except Exception as exc:
                 print(
-                    f"[info] LLM backend unavailable ({type(exc).__name__}); "
-                    "using rule-based fallback."
+                    f"[info] LLM backend unavailable "
+                    f"({type(exc).__name__}): {exc}. "
+                    "Using rule-based fallback."
                 )
                 self.llm = self.rule
+
         self.reset()
 
     def reset(self):
@@ -189,26 +244,103 @@ class CBTCounsellor:
         self.last_confidence = 0.0
 
     def _classify_full_conversation(self):
-        combined = " ".join(self.user_messages).strip()
-        if not combined:
+        """
+        Classify individual user messages and aggregate non-none predictions.
+
+        This avoids passing one long multi-turn transcript to a classifier
+        trained on individual text samples.
+        """
+
+        if not self.user_messages:
             return "none", 0.0
+
+        if getattr(self.clf, "kind", "none") == "none":
+            return "none", 0.0
+
         try:
-            predictions = self.clf.predict(combined, top_k=1)
-            if not predictions:
+            votes = {}
+
+            for message in self.user_messages:
+                message = message.strip()
+
+                if not message:
+                    continue
+
+                predictions = self.clf.predict(
+                    message,
+                    top_k=len(DISTORTIONS)
+                )
+
+                if not predictions:
+                    continue
+
+                none_score = next(
+                    (
+                        float(score)
+                        for label, score in predictions
+                        if label == "none"
+                    ),
+                    0.0
+                )
+
+                candidates = [
+                    (label, float(score))
+                    for label, score in predictions
+                    if label != "none"
+                ]
+
+                if not candidates:
+                    continue
+
+                label, score = max(
+                    candidates,
+                    key=lambda item: item[1]
+                )
+
+                # Require a sufficiently strong non-none prediction
+                # that also exceeds the model's none score.
+                if (
+                    score >= MIN_PATTERN_SCORE
+                    and score > none_score
+                ):
+                    votes.setdefault(label, []).append(score)
+
+            if not votes:
                 return "none", 0.0
-            label, score = predictions[0]
-            # This is a model score, not a calibrated clinical probability.
-            if float(score) < 0.20:
-                return "none", float(score)
-            return label, float(score)
+
+            # Most supporting messages wins.
+            # Average score breaks ties.
+            best_label = max(
+                votes,
+                key=lambda label: (
+                    len(votes[label]),
+                    sum(votes[label]) / len(votes[label])
+                )
+            )
+
+            average_score = (
+                sum(votes[best_label]) / len(votes[best_label])
+            )
+
+            return best_label, float(average_score)
+
         except Exception as exc:
-            print(f"[warning] Classifier failed ({type(exc).__name__}).")
+            print(
+                f"[warning] Classifier failed "
+                f"({type(exc).__name__}): {exc}"
+            )
             return "none", 0.0
 
     def _one_question_reply(self, generated, user_text, turn_number):
-        """Return the next fixed CBT question; never reuse an earlier question."""
-        index = max(0, min(turn_number - 1, len(EXPLORATION_QUESTIONS) - 1))
+        """Return the next fixed CBT question."""
+
+        index = max(
+            0,
+            min(turn_number - 1, len(EXPLORATION_QUESTIONS) - 1)
+        )
+
         question = EXPLORATION_QUESTIONS[index]
+
         acknowledgements = [
             "I hear that this has been weighing on you.",
             "Thank you for explaining the situation.",
@@ -221,29 +353,39 @@ class CBTCounsellor:
             "It sounds like you have some strengths and support to draw on.",
             "Let's turn what you've noticed into one manageable step.",
         ]
+
         return f"{acknowledgements[index]} {question}"
 
     def respond(self, user_text):
         user_text = (user_text or "").strip()
+
         if not user_text:
             return {
                 "reply": "Please type your response so we can continue.",
-                "distortion": None, "confidence": None,
-                "stage": STAGE_NAMES[min(self.stage, 10)], "crisis": False,
+                "distortion": None,
+                "confidence": None,
+                "stage": STAGE_NAMES[min(self.stage, 10)],
+                "crisis": False,
                 "ready_to_finish": self.turns >= MIN_TURNS_FOR_SUMMARY,
             }
+
         if self.finished:
             return {
                 "reply": "This reflection is complete. Select New session to start again.",
                 "distortion": self.last_distortion,
                 "confidence": self.last_confidence,
-                "stage": "Final reflection", "crisis": False,
+                "stage": "Final reflection",
+                "crisis": False,
                 "ready_to_finish": True,
             }
+
         if check_risk(user_text):
             return {
-                "reply": CRISIS_MESSAGE, "distortion": None, "confidence": None,
-                "stage": "CRISIS PROTOCOL", "crisis": True,
+                "reply": CRISIS_MESSAGE,
+                "distortion": None,
+                "confidence": None,
+                "stage": "CRISIS PROTOCOL",
+                "crisis": True,
                 "ready_to_finish": False,
             }
 
@@ -251,20 +393,33 @@ class CBTCounsellor:
         self.turns += 1
         self.stage = min(self.turns, 10)
 
-        # Use the LLM to retain the project integration and conversation context,
-        # but use a deterministic question sequence to prevent repeated questions
-        # from a small language model.
+        # Use the LLM for project integration and context.
+        # The fixed questions control the actual progression.
         try:
-            self.llm.generate(user_text, "none", min(self.stage, 4), self.history)
+            self.llm.generate(
+                user_text,
+                "none",
+                min(self.stage, 4),
+                self.history
+            )
         except Exception as exc:
-            print(f"[warning] LLM generation failed ({type(exc).__name__}); continuing with guided flow.")
+            print(
+                f"[warning] LLM generation failed "
+                f"({type(exc).__name__}): {exc}. "
+                "Continuing with guided flow."
+            )
 
-        reply = self._one_question_reply("", user_text, self.turns)
+        reply = self._one_question_reply(
+            "",
+            user_text,
+            self.turns
+        )
 
         self.history.extend([
             {"role": "user", "content": user_text},
             {"role": "assistant", "content": reply},
         ])
+
         self.history = self.history[-MAX_HISTORY_MESSAGES:]
 
         return {
@@ -277,93 +432,165 @@ class CBTCounsellor:
         }
 
     def finish(self):
+
         if self.finished:
             return {
                 "reply": "This reflection has already been completed.",
                 "distortion": self.last_distortion,
                 "confidence": self.last_confidence,
-                "stage": "Final reflection", "crisis": False,
+                "stage": "Final reflection",
+                "crisis": False,
             }
+
         if self.turns < MIN_TURNS_FOR_SUMMARY:
             remaining = MIN_TURNS_FOR_SUMMARY - self.turns
+
             return {
-                "reply": f"Let's explore a little more first. Please answer {remaining} more question(s).",
-                "distortion": None, "confidence": None,
-                "stage": STAGE_NAMES[min(self.stage, 4)], "crisis": False,
+                "reply": (
+                    f"Let's explore a little more first. "
+                    f"Please answer {remaining} more question(s)."
+                ),
+                "distortion": None,
+                "confidence": None,
+                "stage": STAGE_NAMES[min(self.stage, 4)],
+                "crisis": False,
             }
 
         label, score = self._classify_full_conversation()
-        classifier_available = getattr(self.clf, "kind", "none") != "none"
+
+        classifier_available = (
+            getattr(self.clf, "kind", "none") != "none"
+        )
+
         if not classifier_available:
             label = None
             score = None
 
-        # The final pattern label is controlled by the classifier, never invented by the LLM.
         transcript = "\n".join(self.user_messages)
+
+        # The final pattern label is controlled by the classifier.
         if not classifier_available:
             pattern_line = (
-                "**Cognitive pattern:** Not available — no trained classifier model "
-                "was loaded in this project run. The conversation can still be summarised, "
-                "but a pattern cannot be reliably assigned."
+                "**Cognitive pattern:** Not available — no trained classifier "
+                "model was loaded in this project run. The conversation can "
+                "still be summarised, but a pattern cannot be reliably assigned."
             )
+
         elif label == "none":
             pattern_line = (
-                "**Cognitive pattern:** No clear pattern was identified by the classifier. "
-                "This does not mean that your feelings are invalid."
+                "**Cognitive pattern:** No clear pattern was identified "
+                "by the classifier. This does not mean that your feelings "
+                "are invalid."
             )
+
         else:
-            description = DISTORTIONS.get(label, "a possible unhelpful thinking pattern")
+            description = DISTORTIONS.get(
+                label,
+                "a possible unhelpful thinking pattern"
+            )
+
             pattern_line = (
-                f"**Possible cognitive pattern:** {label.replace('_', ' ')}. "
+                f"**Possible cognitive pattern:** "
+                f"{label.replace('_', ' ')}. "
                 f"{description} This is a model suggestion, not a diagnosis."
             )
 
-        # Ground the recap in the user's actual words instead of assuming a fixed
-        # placement/academic scenario. Keep excerpts short for a readable summary.
+        # Ground the recap in the user's actual words.
         excerpts = []
+
         for item in self.user_messages:
             cleaned = " ".join(item.split())
+
             if cleaned and cleaned not in excerpts:
-                excerpts.append(cleaned[:240] + ("…" if len(cleaned) > 240 else ""))
-        recap = "\\n".join(f"- {item}" for item in excerpts[-4:])
+                excerpts.append(
+                    cleaned[:240] + ("…" if len(cleaned) > 240 else "")
+                )
+
+        recap = "\n".join(
+            f"- {item}" for item in excerpts[-4:]
+        )
+
         reply = (
-            "## Final reflection\\n\\n"
-            "**What you shared:**\\n" + (recap or "- You shared your experience during this reflection.") + "\\n\\n"
-            f"{pattern_line}\\n\\n"
-            "**Balanced thought:** The difficulties you described are real, but they do not "
-            "prove that the outcome you fear is certain. A more balanced view considers both "
-            "the challenges and the evidence of effort, learning, and possible progress.\\n\\n"
-            "**One practical next step:** Choose one small action related to the concern you "
-            "described, make it specific, and decide when you will do it. Afterward, note what "
-            "you learned rather than judging yourself only by the result.\\n\\n"
-            "*This is an educational CBT-style reflection, not a clinical assessment or diagnosis.*"
+            "## Final reflection\n\n"
+            "**What you shared:**\n"
+            + (
+                recap
+                or "- You shared your experience during this reflection."
+            )
+            + "\n\n"
+            + pattern_line
+            + "\n\n"
+            "**Balanced thought:** The difficulties you described are real, "
+            "but they do not prove that the outcome you fear is certain. "
+            "A more balanced view considers both the challenges and the "
+            "evidence of effort, learning, and possible progress.\n\n"
+            "**One practical next step:** Choose one small action related "
+            "to the concern you described, make it specific, and decide "
+            "when you will do it. Afterward, note what you learned rather "
+            "than judging yourself only by the result.\n\n"
+            "*This is an educational CBT-style reflection, not a clinical "
+            "assessment or diagnosis.*"
         )
 
         self.finished = True
         self.last_distortion = label or "unavailable"
         self.last_confidence = score
-        self.history.append({"role": "assistant", "content": reply})
+
+        self.history.append({
+            "role": "assistant",
+            "content": reply
+        })
+
         return {
             "reply": reply,
             "distortion": label,
-            "confidence": round(float(score), 3) if score is not None else None,
+            "confidence": (
+                round(float(score), 3)
+                if score is not None
+                else None
+            ),
             "stage": "Final reflection",
             "crisis": False,
         }
 
+
 if __name__ == "__main__":
+
     bot = CBTCounsellor()
-    print(f"Backend: {bot.llm.name} | classifier: {bot.clf.kind}")
-    print("Start by describing what's been bothering you. Type 'quit' to exit.")
+
+    print(
+        f"Backend: {bot.llm.name} | "
+        f"classifier: {bot.clf.kind}"
+    )
+
+    print(
+        "Start by describing what's been bothering you. "
+        "Type 'quit' to exit."
+    )
+
     while True:
         user = input("You: ").strip()
+
         if user.lower() in {"quit", "exit"}:
             break
+
         result = bot.respond(user)
+
         print(f"\nBot: {result['reply']}\n")
+
         if result.get("ready_to_finish"):
-            choice = input("Finish reflection now? (y/n): ").strip().lower()
+            choice = input(
+                "Finish reflection now? (y/n): "
+            ).strip().lower()
+
             if choice == "y":
                 final = bot.finish()
-                print(f"\nPattern: {final['distortion']} (score {final['confidence']})")
-                print(f"Final reflection: {final['reply']}\n")
+
+                print(
+                    f"\nPattern: {final['distortion']} "
+                    f"(score {final['confidence']})"
+                )
+
+                print(
+                    f"Final reflection: {final['reply']}\n"
+                )
